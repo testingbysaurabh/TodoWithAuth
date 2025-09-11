@@ -30,3 +30,5 @@ mongoose.connect(process.env.mongo_url)
     .catch(() => {
         console.log("Failed")
     })
+
+    module.exports = app
