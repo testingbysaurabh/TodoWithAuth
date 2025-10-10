@@ -11,7 +11,7 @@ const cp = require("cookie-parser")
 
 app.use(cors({
     credentials: true,
-    origin: "http://localhost:5173"
+    origin: ["http://localhost:5173",'https://todo-with-auth-ruddy.vercel.app/api']
 }))
 app.use(express.json())
 app.use(cp())
