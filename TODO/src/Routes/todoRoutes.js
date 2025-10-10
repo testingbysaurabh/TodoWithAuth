@@ -44,6 +44,8 @@ router.get("/todos", isLoggedIn ,async(req, res) => {
 
 
 
+
+
 router.get("/todos/:id", isLoggedIn , isAuthor ,async(req, res) => {
     try {
         const{id} = req.params

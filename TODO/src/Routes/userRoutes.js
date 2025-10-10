@@ -72,6 +72,7 @@ router.post("/user/signup", async(req, res) => {
 
 
 
+
 router.post("/user/login", async(req, res) => {
     try {
         const{username, password} = req.body
@@ -102,6 +103,7 @@ router.post("/user/login", async(req, res) => {
         res.status(400).json({error : error.message})
     }
 })
+
 
 
 

@@ -29,12 +29,14 @@ const New = () => {
         if (res.status == 200) {
           nav("/")
         }
+        
       } catch (error) {
         console.log(error.message)
       }
     }
     at()
   }
+
 
   return (
     <div className='bg-gradient-to-br from-sky-700 via-sky-300 to-sky-600  min-h-[100vh]'>
